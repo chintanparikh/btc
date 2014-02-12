@@ -7,6 +7,8 @@ namespace :btc do
   	current_rate = get_current_rate
 
   	User.all.each do |user|
+  		puts "Current rate: #{current_rate}"
+  		puts "Last rate: #{user.last_rate}"
   		if user.needs_to_buy? and (current_rate > user.last_rate)
   			user.btc = user.usd / current_rate
   			puts "Bought #{user.btc} for #{user.usd}"
