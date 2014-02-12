@@ -15,7 +15,7 @@ namespace :btc do
   			user.usd = 0
   		elsif user.needs_to_sell? and (current_rate < user.last_rate)
   			user.usd = user.btc * current_rate
-  			puts "Solid #{user.btc} for #{user.usd}"
+  			puts "Sold #{user.btc} for #{user.usd}"
   			user.btc = 0
   		else
   			puts "Did nothing"
