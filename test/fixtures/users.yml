@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  usd: 1
+  btc: 1
+  last_rate: 1
+
+two:
+  usd: 1
+  btc: 1
+  last_rate: 1
